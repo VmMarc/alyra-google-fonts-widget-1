@@ -3,7 +3,7 @@ import Setting from "./Setting"
 import Display from "./Display"
 
 const Main = () => {
-  const [viewPolice, setViewPolice] = useState("popularity");
+  const [viewPolice, setViewPolice] = useState("date");
   const [text, setText] = useState("Portez ce vieux whisky au juge blond qui fume !? 0123456789");
   const [sizePolice, setSizePolice] = useState(20);
   const [policeList, setPoliceList] = useState([]);
