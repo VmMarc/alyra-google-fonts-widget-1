@@ -23,7 +23,7 @@ const Articles = ({ text, sizePolice, policeFamily, policeVariant, policeCategor
           <p className="sample" style={{ fontFamily: `${policeFamily}, ${policeCategory}`, fontSize: `${sizePolice}px` }}>
             {text}
           </p>
-          <a rel="noopener noreferrer" target="_blank" className="text-danger" href={`https://fonts.google.com/specimen/${policeFamily}`}>Voir sur Google Fonts (ouvre un nouveau tab)</a>
+          <a rel="noopener noreferrer" target="_blank" className="link-danger" href={`https://fonts.google.com/specimen/${policeFamily}`}>Voir sur Google Fonts (ouvre un nouveau tab)</a>
         </div>
       </div>
     </article>
