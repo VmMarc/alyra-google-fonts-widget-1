@@ -26,12 +26,10 @@ const Main = () => {
     setLoading(true);
 
     //Ajout de notre key sous le format REACT_APP_"nom key"
-    // fetch(`https://www.googleapis.com/webfonts/v1/webfonts?sort=${viewPolice}&key=${process.env.REACT_APP_GOOGLEFONTS_API_KEY}`, {
-    //   signal: controllerRef.current.signal
-    // })
-    fetch(`https://webfonts.googleapis.com/v1/webfonts?sort=${viewPolice}&key=${process.env.REACT_APP_GOOGLEFONTS_API_KEY}`, {
+    fetch(`https://www.googleapis.com/webfonts/v1/webfonts?sort=${viewPolice}&key=${process.env.REACT_APP_GOOGLEFONTS_API_KEY}`, {
       signal: controllerRef.current.signal
     })
+
       .then((response) => {
         if (!response.ok) {
           throw new Error(
