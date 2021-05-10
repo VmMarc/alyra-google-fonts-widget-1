@@ -3,7 +3,7 @@ import React from 'react'
 const Setting = ({ changePolice, viewPolice, changeText, text, changeSizePolice, sizePolice, categories, filter, changeFilter }) => {
   return (
     <div className="col-lg-3 mb-4">
-      <div style={{ position: "sticky", top: "0px" }}>
+      <div style={{ position: "sticky", top: "10px" }}>
         <label className="fw-bold mb-2" htmlFor="sort">Afficher des polices</label>
         <select id="sort" onChange={changePolice} className="form-select mb-4" value={viewPolice}>
           <option value="date">Les plus récentes</option>

@@ -104,7 +104,7 @@ const Main = () => {
   const filteredPolices = filterPolices(filter)
 
   return (
-    <main className="container min-vh-100">
+    <main className="container min-vh-100 pt-5">
       <div className="row 5">
         <Setting changePolice={changePolice} viewPolice={viewPolice} changeText={changeText} text={text} changeSizePolice={changeSizePolice} sizePolice={sizePolice} categories={categories} filter={filter} changeFilter={changeFilter} />
         <Display viewPolice={viewPolice} policeList={filteredPolices} text={text} sizePolice={sizePolice} loading={loading} error={error} />
